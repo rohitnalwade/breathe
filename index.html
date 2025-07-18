@@ -16,15 +16,15 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #F9FAFB;
+            background-color: #F8FAFC; /* Softer gray */
         }
         .tab-active {
-            color: #1e40af; /* blue-800 */
+            color: #1e3a8a; /* Deeper blue */
             background-color: #ffffff;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            box-shadow: 0 4px 14px 0 rgb(0 0 0 / 0.05);
         }
         .tab-inactive {
-            color: #4b5563; /* gray-600 */
+            color: #374151; /* Darker gray for better contrast */
             background-color: transparent;
         }
         .tab-content {
@@ -35,24 +35,30 @@
             to { opacity: 1; transform: translateY(0); }
         }
         .gradient-text {
-            background: linear-gradient(to right, #1d4ed8, #2563eb);
+            background: linear-gradient(to right, #1e40af, #3b82f6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .icon-bg {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 0.75rem;
+        .hero-bg {
+            background-color: #ffffff;
+            background-image: radial-gradient(#dbeafe 1px, transparent 1px);
+            background-size: 2rem 2rem;
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
-<body class="bg-gray-50 text-slate-800 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
     <!-- Header & Hero Section -->
-    <header class="bg-white border-b border-slate-200">
+    <header class="hero-bg border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
             <p class="text-base font-semibold text-blue-600 tracking-wider uppercase">Grounded in Research from Harvard University</p>
             <h1 class="mt-4 text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tighter">
@@ -65,9 +71,9 @@
     </header>
 
     <!-- What We Do & How It Works Section -->
-    <section class="py-16 md:py-24 bg-gray-50">
+    <section class="py-16 md:py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
+            <div class="text-center scroll-reveal">
                 <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Your Partner in Creating a Healthy Learning Environment</h2>
                 <p class="mt-4 max-w-3xl mx-auto text-lg text-slate-600">
                     Breathe Easier provides "clean air as a service"—a complete, hassle-free solution that guarantees a healthier environment for your students and staff, so you can focus on education.
@@ -75,25 +81,25 @@
             </div>
             <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Our Background Card -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="icon-bg bg-indigo-100 text-indigo-600">
-                        <span class="text-2xl font-bold">🏆</span>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 scroll-reveal">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-100 text-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                     </div>
                     <h3 class="mt-6 text-xl font-bold text-slate-900">Our Expertise in Air Quality</h3>
                     <p class="mt-4 text-slate-600">Our team has deep, practical experience in this field. We have previously built the core technology—the IoT hardware, apps, and cloud software—for a major smart air purifier manufacturer, ensuring their products met stringent air quality standards for both India and Europe.</p>
                 </div>
                 <!-- How It Works Card -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="icon-bg bg-sky-100 text-sky-600">
-                        <span class="text-2xl font-bold">⚙️</span>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 scroll-reveal" style="transition-delay: 150ms;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-sky-100 text-sky-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a9 9 0 0 0-9 9v10c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V10a9 9 0 0 0-9-9z"></path><path d="M8 21h8"></path><path d="M12 15a3 3 0 0 0 3-3V9a3 3 0 0 0-6 0v3a3 3 0 0 0 3 3z"></path></svg>
                     </div>
                     <h3 class="mt-6 text-xl font-bold text-slate-900">How Our Intelligent System Works</h3>
                     <p class="mt-4 text-slate-600">Our system uses a smart, four-stage process: <b class="text-slate-700">SENSE</b> with discreet sensors, <b class="text-slate-700">ANALYZE</b> data in our cloud "brain," <b class="text-slate-700">ACT</b> with a swarm of quiet purifiers, and <b class="text-slate-700">INFORM</b> you with a real-time data dashboard.</p>
                 </div>
                 <!-- Totally Managed Card -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300">
-                     <div class="icon-bg bg-green-100 text-green-600">
-                        <span class="text-2xl font-bold">🤝</span>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 scroll-reveal" style="transition-delay: 300ms;">
+                     <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-green-100 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                     </div>
                     <h3 class="mt-6 text-xl font-bold text-slate-900">A "Totally Managed" Service</h3>
                     <p class="mt-4 text-slate-600">We handle everything for you. Your subscription includes all hardware, monitoring, proactive maintenance, and filter changes. There are no hidden costs and no extra work for your staff.</p>
@@ -101,7 +107,7 @@
             </div>
             
             <!-- NEW IMAGE SECTION -->
-            <div class="mt-20">
+            <div class="mt-20 scroll-reveal">
                 <h3 class="text-2xl font-bold text-slate-900 tracking-tight text-center">Our System in Action</h3>
                 <div class="mt-8">
                     <img src="image.png" alt="An illustration showing the 4-step process of the Breathe Easier system: Sense, Analyze, Act, and Inform, all happening within a classroom environment." class="w-full h-auto rounded-2xl shadow-xl border border-slate-200">
@@ -113,11 +119,11 @@
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Tab Navigation -->
-        <nav class="sticky top-0 bg-gray-50/80 backdrop-blur-lg z-10 py-4">
-            <div class="max-w-lg mx-auto flex justify-center items-center bg-slate-200/70 p-1.5 rounded-xl" id="tab-nav">
-                <button data-tab="principals" class="tab-btn w-full py-2.5 px-4 text-sm sm:text-base font-semibold rounded-lg transition-all duration-300 tab-active">For School Leaders</button>
-                <button data-tab="teachers" class="tab-btn w-full py-2.5 px-4 text-sm sm:text-base font-semibold rounded-lg transition-all duration-300 tab-inactive">For Teachers</button>
-                <button data-tab="parents" class="tab-btn w-full py-2.5 px-4 text-sm sm:text-base font-semibold rounded-lg transition-all duration-300 tab-inactive">For Parents</button>
+        <nav class="sticky top-4 bg-slate-100/60 backdrop-blur-xl z-10 py-2 rounded-xl border border-slate-200 shadow-sm">
+            <div class="max-w-lg mx-auto flex justify-center items-center bg-slate-200/50 p-1.5 rounded-lg" id="tab-nav">
+                <button data-tab="principals" class="tab-btn w-full py-2.5 px-4 text-sm sm:text-base font-semibold rounded-md transition-all duration-300 tab-active">For School Leaders</button>
+                <button data-tab="teachers" class="tab-btn w-full py-2.5 px-4 text-sm sm:text-base font-semibold rounded-md transition-all duration-300 tab-inactive">For Teachers</button>
+                <button data-tab="parents" class="tab-btn w-full py-2.5 px-4 text-sm sm:text-base font-semibold rounded-md transition-all duration-300 tab-inactive">For Parents</button>
             </div>
         </nav>
 
@@ -126,7 +132,7 @@
 
             <!-- Tab Content: For School Leaders & Principals -->
             <section id="principals" class="tab-content">
-                <div class="text-center">
+                <div class="text-center scroll-reveal">
                     <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Strategic Impact on School Performance</h2>
                     <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
                         Investing in a healthy building is a direct investment in your school's most critical KPIs: academic achievement, student attendance, and teacher retention.
@@ -134,24 +140,24 @@
                 </div>
 
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 text-center scroll-reveal">
                         <h3 class="font-bold text-5xl text-blue-600">+2.9%</h3>
                         <p class="mt-2 font-semibold text-slate-800">Potential Increase in Math Scores</p>
                         <p class="mt-1 text-sm text-slate-500">Harvard report cites studies linking better ventilation to significant gains in academic testing.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 text-center scroll-reveal" style="transition-delay: 150ms;">
                         <h3 class="font-bold text-5xl text-green-600">-13.8M</h3>
                         <p class="mt-2 font-semibold text-slate-800">Fewer Missed School Days</p>
                         <p class="mt-1 text-sm text-slate-500">Clean air reduces asthma triggers, a leading cause of chronic absenteeism cited in the report.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 text-center scroll-reveal" style="transition-delay: 300ms;">
                         <h3 class="font-bold text-5xl text-indigo-600">Healthier Staff</h3>
                         <p class="mt-2 font-semibold text-slate-800">Improved Teacher Well-being</p>
                         <p class="mt-1 text-sm text-slate-500">The report notes teachers have a higher prevalence of asthma compared to other non-industrial professions.</p>
                     </div>
                 </div>
 
-                <div class="mt-16 grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                <div class="mt-16 grid grid-cols-1 lg:grid-cols-5 gap-12 items-center scroll-reveal">
                     <div class="lg:col-span-2">
                         <h3 class="text-2xl font-bold text-slate-900 tracking-tight">The Data-Driven Case for Better Air</h3>
                         <p class="mt-4 text-slate-600">The "Schools for Health" report is unequivocal: *"The evidence is unambiguous - the school building impacts student health, thinking and performance."* Our service provides a direct, cost-effective way to act on this evidence.</p>
@@ -186,12 +192,12 @@
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="text-center p-6 rounded-xl bg-red-50 border border-red-200">
-                            <span class="text-6xl">😴</span>
+                             <div class="text-5xl">😴</div>
                             <p class="mt-3 font-semibold text-red-800">Typical Air</p>
                             <p class="text-sm text-red-700">Drowsy & Distracted</p>
                         </div>
                         <div class="text-center p-6 rounded-xl bg-green-50 border border-green-200">
-                            <span class="text-6xl">💡</span>
+                            <div class="text-5xl">💡</div>
                             <p class="mt-3 font-semibold text-green-800">Managed Air</p>
                             <p class="text-sm text-green-700">Alert & Focused</p>
                         </div>
@@ -224,7 +230,7 @@
                             <div class="absolute w-72 h-72 bg-green-100 rounded-full animate-pulse"></div>
                             <div class="absolute w-56 h-56 bg-green-200 rounded-full"></div>
                             <div class="relative w-48 h-48 bg-green-500 rounded-full flex items-center justify-center text-white shadow-2xl">
-                                <span class="text-7xl">🛡️</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                             </div>
                             <div class="absolute top-8 left-0 text-center">
                                 <p class="font-semibold bg-white px-3 py-1 rounded-full shadow-md text-sm">Germs</p>
@@ -246,21 +252,27 @@
                         <p class="mt-4 text-slate-600">A healthy child is a better learner. The Harvard report makes a clear connection between the air students breathe and their ability to succeed in school.</p>
                         <ul class="mt-6 space-y-6">
                             <li class="flex">
-                                <span class="text-green-500 text-2xl mr-4">✔</span>
+                                <div class="flex-shrink-0 text-green-500 text-2xl mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
                                 <div>
                                     <h4 class="font-semibold text-lg">Fewer Sick Days</h4>
                                     <p class="text-slate-600">By reducing airborne germs and asthma triggers, we help minimize health-related absences, ensuring your child doesn't miss valuable learning time.</p>
                                 </div>
                             </li>
                              <li class="flex">
-                                <span class="text-green-500 text-2xl mr-4">✔</span>
+                                <div class="flex-shrink-0 text-green-500 text-2xl mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
                                 <div>
                                     <h4 class="font-semibold text-lg">Improved Focus</h4>
                                     <p class="text-slate-600">Our system manages CO₂ levels to prevent the stuffiness that leads to drowsiness, helping your child stay alert and engaged in class.</p>
                                 </div>
                             </li>
                              <li class="flex">
-                                <span class="text-green-500 text-2xl mr-4">✔</span>
+                                <div class="flex-shrink-0 text-green-500 text-2xl mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
                                 <div>
                                     <h4 class="font-semibold text-lg">Peace of Mind</h4>
                                     <p class="text-slate-600">Know that your child spends their day in an environment that is actively managed for their health and well-being.</p>
@@ -407,6 +419,18 @@
                        setTimeout(initChart, 50);
                     }
                 }
+            });
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.scroll-reveal').forEach(el => {
+                observer.observe(el);
             });
 
             // Initialize chart on load for the default active tab
