@@ -1,9 +1,9 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Healthier School is a Higher-Performing School</title>
+    <title>Lakeside BreathEasier | A Healthier School is a Higher-Performing School</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,8 +41,8 @@
         }
         .hero-bg {
             background-color: #ffffff;
-            background-image: radial-gradient(#dbeafe 1px, transparent 1px);
-            background-size: 2rem 2rem;
+            background-image: radial-gradient(#e0e7ff 1px, transparent 1px);
+            background-size: 2.5rem 2.5rem;
         }
         .scroll-reveal {
             opacity: 0;
@@ -55,71 +55,97 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-slate-800 antialiased">
+<body class="bg-gray-50 text-slate-700 antialiased">
 
-    <!-- Header & Hero Section -->
-    <header class="hero-bg border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
-            <p class="text-base font-semibold text-blue-600 tracking-wider uppercase">Grounded in Research from Harvard University</p>
-            <h1 class="mt-4 text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tighter">
-                A <span class="gradient-text">Healthier School</span> is a <br class="hidden md:block" /> Higher-Performing School
-            </h1>
-            <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
-                The air our students breathe directly impacts their health, thinking, and academic success. Discover the science and the solution to unlocking their full potential.
-            </p>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center text-xl text-white shadow-inner">
+                        🛡️
+                    </div>
+                    <span class="text-xl font-bold text-slate-800">Lakeside BreathEasier</span>
+                </a>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="font-semibold text-slate-600 hover:text-blue-700 transition-colors">Home</a>
+                    <a href="#about" class="font-semibold text-slate-600 hover:text-blue-700 transition-colors">About Us</a>
+                    <a href="#service" class="font-semibold text-slate-600 hover:text-blue-700 transition-colors">Our Service</a>
+                    <a href="#contact" class="font-semibold text-slate-600 hover:text-blue-700 transition-colors">Contact</a>
+                </nav>
+                <!-- CTA Button -->
+                <a href="mailto:info@lakesidebreatheasier.com" class="hidden md:inline-block bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-lg shadow-sm hover:bg-blue-800 transition-colors duration-200">
+                    Request a Consultation
+                </a>
+            </div>
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+            <p class="text-base font-semibold text-blue-700 tracking-wider uppercase">Grounded in Research from Harvard University</p>
+            <h1 class="mt-4 text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tighter">
+                A <span class="gradient-text">Healthier School</span> is a <br class="hidden md:block" /> Higher-Performing School
+            </h1>
+            <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600 leading-relaxed">
+                The air our students breathe directly impacts their health, thinking, and academic success. Discover the science and the solution to unlocking their full potential.
+            </p>
+        </div>
+    </section>
+
     <!-- What We Do & How It Works Section -->
-    <section class="py-16 md:py-24 bg-slate-50">
+    <section id="about" class="py-16 md:py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center scroll-reveal">
-                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Your Partner in Creating a Healthy Learning Environment</h2>
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Your Partner in Creating a Healthy Learning Environment</h2>
                 <p class="mt-4 max-w-3xl mx-auto text-lg text-slate-600">
-                    Breathe Easier provides "clean air as a service"—a complete, hassle-free solution that guarantees a healthier environment for your students and staff, so you can focus on education.
+                    Lakeside BreathEasier provides "clean air as a service"—a complete, hassle-free solution that guarantees a healthier environment for your students and staff, so you can focus on education.
                 </p>
             </div>
             <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Our Background Card -->
-                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 scroll-reveal">
-                    <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-indigo-100 text-indigo-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 transform hover:-translate-y-1 transition-transform duration-300 scroll-reveal">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-blue-100 text-blue-700 text-2xl">
+                        🏆
                     </div>
                     <h3 class="mt-6 text-xl font-bold text-slate-900">Our Expertise in Air Quality</h3>
-                    <p class="mt-4 text-slate-600">Our team has deep, practical experience in this field. We have previously built the core technology—the IoT hardware, apps, and cloud software—for a major smart air purifier manufacturer, ensuring their products met stringent air quality standards for both India and Europe.</p>
+                    <p class="mt-4 text-base text-slate-600">Our team has deep, practical experience in this field. We have previously built the core technology—the IoT hardware, apps, and cloud software—for a major smart air purifier manufacturer, ensuring their products met stringent air quality standards for both India and Europe.</p>
                 </div>
                 <!-- How It Works Card -->
-                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 scroll-reveal" style="transition-delay: 150ms;">
-                    <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-sky-100 text-sky-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a9 9 0 0 0-9 9v10c0 .6.4 1 1 1h16c.6 0 1-.4 1-1V10a9 9 0 0 0-9-9z"></path><path d="M8 21h8"></path><path d="M12 15a3 3 0 0 0 3-3V9a3 3 0 0 0-6 0v3a3 3 0 0 0 3 3z"></path></svg>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 transform hover:-translate-y-1 transition-transform duration-300 scroll-reveal" style="transition-delay: 150ms;">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-blue-100 text-blue-700 text-2xl">
+                        ⚙️
                     </div>
                     <h3 class="mt-6 text-xl font-bold text-slate-900">How Our Intelligent System Works</h3>
-                    <p class="mt-4 text-slate-600">Our system uses a smart, four-stage process: <b class="text-slate-700">SENSE</b> with discreet sensors, <b class="text-slate-700">ANALYZE</b> data in our cloud "brain," <b class="text-slate-700">ACT</b> with a swarm of quiet purifiers, and <b class="text-slate-700">INFORM</b> you with a real-time data dashboard.</p>
+                    <p class="mt-4 text-base text-slate-600">Our system uses a smart, four-stage process: <b class="text-slate-800">SENSE</b> with discreet sensors, <b class="text-slate-800">ANALYZE</b> data in our cloud "brain," <b class="text-slate-800">ACT</b> with a swarm of quiet purifiers, and <b class="text-slate-800">INFORM</b> you with a real-time data dashboard.</p>
                 </div>
                 <!-- Totally Managed Card -->
-                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 transform hover:-translate-y-2 transition-transform duration-300 scroll-reveal" style="transition-delay: 300ms;">
-                     <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-green-100 text-green-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-200 transform hover:-translate-y-1 transition-transform duration-300 scroll-reveal" style="transition-delay: 300ms;">
+                     <div class="flex items-center justify-center h-12 w-12 rounded-xl bg-blue-100 text-blue-700 text-2xl">
+                        🤝
                     </div>
                     <h3 class="mt-6 text-xl font-bold text-slate-900">A "Totally Managed" Service</h3>
-                    <p class="mt-4 text-slate-600">We handle everything for you. Your subscription includes all hardware, monitoring, proactive maintenance, and filter changes. There are no hidden costs and no extra work for your staff.</p>
+                    <p class="mt-4 text-base text-slate-600">We handle everything for you. Your subscription includes all hardware, monitoring, proactive maintenance, and filter changes. There are no hidden costs and no extra work for your staff.</p>
                 </div>
             </div>
             
             <div class="mt-20 scroll-reveal">
                 <h3 class="text-2xl font-bold text-slate-900 tracking-tight text-center">Our System in Action</h3>
                 <div class="mt-8">
-                    <img src="image.png" alt="An illustration showing the 4-step process of the Breathe Easier system: Sense, Analyze, Act, and Inform, all happening within a classroom environment." class="w-full h-auto rounded-2xl shadow-xl border border-slate-200">
+                    <img src="http://googleusercontent.com/file_content/1" alt="An illustration showing the 4-step process of the Lakeside BreathEasier system: Sense, Analyze, Act, and Inform, all happening within a classroom environment." class="w-full h-auto rounded-2xl shadow-xl border border-slate-200">
                 </div>
             </div>
 
         </div>
     </section>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="service" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Tab Navigation -->
-        <nav class="sticky top-4 bg-slate-100/60 backdrop-blur-xl z-10 py-2 rounded-xl border border-slate-200 shadow-sm">
-            <div class="max-w-lg mx-auto flex justify-center items-center bg-slate-200/50 p-1.5 rounded-lg" id="tab-nav">
+        <nav class="sticky top-24 bg-white/70 backdrop-blur-xl z-10 py-2 rounded-xl border border-slate-200 shadow-sm">
+            <div class="max-w-lg mx-auto flex justify-center items-center bg-slate-100 p-1.5 rounded-lg" id="tab-nav">
                 <button data-tab="principals" class="tab-btn w-full py-2.5 px-4 text-sm sm:text-base font-semibold rounded-md transition-all duration-300 tab-active">For School Leaders</button>
                 <button data-tab="teachers" class="tab-btn w-full py-2.5 px-4 text-sm sm:text-base font-semibold rounded-md transition-all duration-300 tab-inactive">For Teachers</button>
                 <button data-tab="parents" class="tab-btn w-full py-2.5 px-4 text-sm sm:text-base font-semibold rounded-md transition-all duration-300 tab-inactive">For Parents</button>
@@ -132,25 +158,25 @@
             <!-- Tab Content: For School Leaders & Principals -->
             <section id="principals" class="tab-content">
                 <div class="text-center scroll-reveal">
-                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Strategic Impact on School Performance</h2>
+                    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Strategic Impact on School Performance</h2>
                     <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
                         Investing in a healthy building is a direct investment in your school's most critical KPIs: academic achievement, student attendance, and teacher retention.
                     </p>
                 </div>
 
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 text-center scroll-reveal">
-                        <h3 class="font-bold text-5xl text-blue-600">+2.9%</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 text-center scroll-reveal">
+                        <h3 class="font-bold text-5xl text-blue-700">+2.9%</h3>
                         <p class="mt-2 font-semibold text-slate-800">Potential Increase in Math Scores</p>
                         <p class="mt-1 text-sm text-slate-500">Harvard report cites studies linking better ventilation to significant gains in academic testing. <sup>[1]</sup></p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 text-center scroll-reveal" style="transition-delay: 150ms;">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 text-center scroll-reveal" style="transition-delay: 150ms;">
                         <h3 class="font-bold text-5xl text-green-600">-13.8M</h3>
                         <p class="mt-2 font-semibold text-slate-800">Fewer Missed School Days</p>
                         <p class="mt-1 text-sm text-slate-500">Clean air reduces asthma triggers, a leading cause of chronic absenteeism cited in the report. <sup>[1]</sup></p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 text-center scroll-reveal" style="transition-delay: 300ms;">
-                        <h3 class="font-bold text-5xl text-indigo-600">Healthier Staff</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 text-center scroll-reveal" style="transition-delay: 300ms;">
+                        <h3 class="font-bold text-5xl text-blue-700">Healthier Staff</h3>
                         <p class="mt-2 font-semibold text-slate-800">Improved Teacher Well-being</p>
                         <p class="mt-1 text-sm text-slate-500">The report notes teachers have a higher prevalence of asthma compared to other non-industrial professions. <sup>[1]</sup></p>
                     </div>
@@ -162,7 +188,7 @@
                         <p class="mt-4 text-slate-600">The "Schools for Health" report is unequivocal: *"The evidence is unambiguous - the school building impacts student health, thinking and performance."* <sup>[1]</sup> Our service provides a direct, cost-effective way to act on this evidence.</p>
                         <p class="mt-4 text-slate-600">This chart visualizes the potential impact on standardized test scores. By optimizing ventilation, we create an environment where students can achieve their full academic potential.</p>
                     </div>
-                    <div class="lg:col-span-3 bg-white p-6 rounded-2xl shadow-xl border border-slate-200">
+                    <div class="lg:col-span-3 bg-white p-6 rounded-2xl shadow-lg border border-slate-200">
                         <div class="chart-container relative h-96 w-full max-w-2xl mx-auto">
                             <canvas id="performanceChart"></canvas>
                         </div>
@@ -173,13 +199,13 @@
             <!-- Tab Content: For Teachers -->
             <section id="teachers" class="tab-content hidden">
                  <div class="text-center">
-                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Creating the Optimal Classroom Environment</h2>
+                    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Creating the Optimal Classroom Environment</h2>
                     <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
                         A healthier classroom means more engaged students, fewer disruptions, and a better environment for both teaching and learning.
                     </p>
                 </div>
 
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
                     <div>
                         <h3 class="text-2xl font-bold text-slate-900 tracking-tight">From Distraction to Engagement</h3>
                         <p class="mt-4 text-slate-600">The Harvard report highlights how poor air quality directly impacts the classroom dynamic. High CO₂ levels lead to drowsiness and a loss of focus.</p>
@@ -216,7 +242,7 @@
             <!-- Tab Content: For Parents -->
             <section id="parents" class="tab-content hidden">
                 <div class="text-center">
-                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight">A Healthier Environment for Your Child to Thrive</h2>
+                    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">A Healthier Environment for Your Child to Thrive</h2>
                     <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
                         As a parent, your child's health and well-being are the top priority. Discover how a healthier classroom environment provides peace of mind and supports their success.
                     </p>
@@ -228,8 +254,8 @@
                         <div class="relative mt-8 flex justify-center items-center h-80">
                             <div class="absolute w-72 h-72 bg-green-100 rounded-full animate-pulse"></div>
                             <div class="absolute w-56 h-56 bg-green-200 rounded-full"></div>
-                            <div class="relative w-48 h-48 bg-green-500 rounded-full flex items-center justify-center text-white shadow-2xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <div class="relative w-48 h-48 bg-green-600 rounded-full flex items-center justify-center text-white shadow-2xl text-7xl">
+                                🛡️
                             </div>
                             <div class="absolute top-8 left-0 text-center">
                                 <p class="font-semibold bg-white px-3 py-1 rounded-full shadow-md text-sm">Germs</p>
@@ -260,6 +286,25 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="mt-16 bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+                    <h3 class="text-2xl font-bold text-slate-900 tracking-tight">Technical FAQ: Germ Filtration</h3>
+                    <div class="mt-4">
+                        <p class="font-semibold text-slate-800 text-lg">Q: How effective are your purifiers at filtering germs like bacteria and viruses?</p>
+                        <p class="mt-2 text-slate-600">A: This is a critical question. Our service utilizes purifiers equipped with **True HEPA filters**, which are medical-grade filtration systems. Their effectiveness is certified to capture 99.97% of airborne particles at 0.3 microns (µm). Due to the physics of air filtration, they are highly effective across a broad spectrum of particle sizes, including those that constitute airborne germs. <sup>[4]</sup></p>
+                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-slate-800">Bacteria</h4>
+                                <p class="mt-1 text-slate-600">Most airborne bacteria (typically 0.5 - 5.0 µm) are well within the capture range of our filters. This includes common pathogens like *Staphylococcus aureus* and *Streptococcus pneumoniae*.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Viruses</h4>
+                                <p class="mt-1 text-slate-600">While individual virus particles are smaller (~0.1 µm), they travel in larger respiratory droplets and aerosols which are easily captured. For the smallest particles, a mechanism called diffusion ensures they are effectively filtered. This includes Influenza viruses, Coronaviruses, and Rhinoviruses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </main>
     </div>
@@ -272,30 +317,58 @@
                 <p><b>[1] Schools for Health: Foundations for Student Success.</b> Joseph G. Allen et al., Harvard T.H. Chan School of Public Health, Center for Health and the Global Environment. This foundational report synthesizes over 200 studies on how school buildings impact student health, thinking, and performance.</p>
                 <p><b>[2] Acute effects of ambient PM2.5 on lung function among schoolchildren.</b> Dandan Xu et al., *Scientific Reports*, volume 10, Article number: 4061 (2020). A large-scale prospective study quantifying the immediate, negative impact of PM2.5 exposure on children's lung capacity.</p>
                 <p><b>[3] Inhalable Particulate Matter and Health (PM2.5 and PM10).</b> California Air Resources Board (CARB). This resource summarizes key findings from major health studies on the effects of particulate matter, including the Children’s Health Study.</p>
+                <p><b>[4] Air Cleaners, HVAC Filters, and Coronavirus (COVID-19).</b> United States Environmental Protection Agency (EPA). This resource explains the efficacy of HEPA filtration in capturing airborne viruses like SARS-CoV-2.</p>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section id="cta" class="py-16 md:py-24 bg-white">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-blue-800 rounded-2xl p-12 text-center text-white shadow-2xl">
-                <h2 class="text-4xl font-extrabold tracking-tight">An Investment in Our Students' Future</h2>
-                <p class="mt-4 max-w-2xl mx-auto text-blue-100">You don't need a massive, multi-crore infrastructure overhaul to achieve these benefits. Our flexible service model brings the advantages of a modern, healthy building to your students in a cost-effective way.</p>
-                <p class="mt-6 font-semibold text-lg">Let's work together to make your school a true "School for Health."</p>
-                <div class="mt-8">
-                    <a href="mailto:Rohit.Nalwade@IITB.ac.in" class="inline-block bg-white text-blue-800 font-bold px-10 py-4 rounded-lg shadow-lg hover:bg-slate-100 transform hover:scale-105 transition-all duration-300">
-                        Request a No-Cost Consultation & Site Assessment
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 text-slate-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Mission -->
+                <div class="md:col-span-1">
+                     <a href="#" class="flex items-center gap-2">
+                        <div class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center text-xl text-white">
+                            🛡️
+                        </div>
+                        <span class="text-xl font-bold text-white">Lakeside BreathEasier</span>
                     </a>
+                    <p class="mt-4 text-sm text-slate-400">Our mission is to make every indoor space a healthy and high-performing environment through intelligent, data-driven air quality management.</p>
+                </div>
+                <!-- Navigation Links -->
+                <div>
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Navigation</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#home" class="text-slate-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-slate-400 hover:text-white">About Us</a></li>
+                        <li><a href="#service" class="text-slate-400 hover:text-white">Our Service</a></li>
+                    </ul>
+                </div>
+                <!-- Solutions Links -->
+                 <div>
+                    <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Solutions For</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-slate-400 hover:text-white">Schools</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white">Offices</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white">Hospitals</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                     <h3 class="text-sm font-semibold text-white tracking-wider uppercase">Contact Us</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="text-slate-400">Navi Mumbai, Maharashtra, India</li>
+                        <li><a href="mailto:info@lakesidebreatheasier.com" class="text-slate-400 hover:text-white">info@lakesidebreatheasier.com</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="mt-16 border-t border-slate-700 pt-8 text-center text-sm text-slate-500">
+                <p>&copy; 2025 Lakeside BreathEasier. All rights reserved.</p>
+            </div>
         </div>
-    </section>
-
-    <footer class="text-center py-10 text-sm text-slate-500 bg-gray-50">
-        <p>&copy; 2025 Breathe Easier. All rights reserved.</p>
-        <p class="mt-1">Inspired by published research from leading institutions.</p>
     </footer>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -324,7 +397,7 @@
                             borderWidth: 1,
                             borderRadius: 6,
                         }, {
-                            label: 'Breathe Easier Managed Air',
+                            label: 'Lakeside BreathEasier Managed Air',
                             data: [102.9, 102.7],
                             backgroundColor: 'rgba(37, 99, 235, 0.7)',
                             borderColor: 'rgba(37, 99, 235, 1)',
@@ -343,7 +416,7 @@
                             title: {
                                 display: true,
                                 text: 'Potential Test Score Improvement with Better Ventilation',
-                                font: { size: 16, weight: '600' },
+                                font: { family: "'Inter', sans-serif", size: 16, weight: '600' },
                                 padding: { top: 10, bottom: 20 },
                                 color: '#1e293b'
                             },
@@ -373,13 +446,14 @@
                                 title: {
                                     display: true,
                                     text: 'Relative Performance Index',
-                                    color: '#475569'
+                                    color: '#475569',
+                                    font: { family: "'Inter', sans-serif" }
                                 },
-                                ticks: { color: '#64748b' },
+                                ticks: { color: '#64748b', font: { family: "'Inter', sans-serif" } },
                                 grid: { color: '#e2e8f0' }
                             },
                             x: {
-                                ticks: { color: '#64748b' },
+                                ticks: { color: '#64748b', font: { family: "'Inter', sans-serif" } },
                                 grid: { display: false }
                             }
                         }
